@@ -16,15 +16,25 @@
                 "draggable": "true"
             }
         },
-        "button": {
-            "prototype": "digit/ui/button.reel",
+        "image": {
+            "prototype": "digit/ui/image.reel",
             "properties": {
-                "element": {"#": "button"},
+                "element": {"#": "image"},
                 "contenteditable": "true",
+                "crossOrigin": null,
+                "dir": "ltr",
+                "draggable": "true"
+            }
+        },
+        "text": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "contenteditable": "true",
+                "converter": null,
                 "dir": "ltr",
                 "draggable": "true",
-                "enabled": true,
-                "label": "Button fghfgh"
+                "value": "Text"
             }
         }
     }
@@ -34,7 +44,6 @@
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <img data-montage-id="image">
         <p data-montage-id="text"></p>
-        <button data-montage-id="button"></button>
     </div>
 </body>
 </html>
