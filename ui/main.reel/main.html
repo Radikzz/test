@@ -16,17 +16,15 @@
                 "draggable": "true"
             }
         },
-        "image": {
-            "prototype": "digit/ui/image.reel",
+        "button": {
+            "prototype": "digit/ui/button.reel",
             "properties": {
-                "element": {"#": "image"},
+                "element": {"#": "button"},
                 "contenteditable": "true",
-                "crossOrigin": null,
                 "dir": "ltr",
-                "draggable": "true"
-            },
-            "bindings": {
-                "src": {"<-": "https://c1.staticflickr.com/5/4043/4637443408_d15452a3db.jpg"}
+                "draggable": "true",
+                "enabled": true,
+                "label": "Button fghfgh"
             }
         }
     }
@@ -34,11 +32,9 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <button data-montage-id="button"></button>
-        <p data-montage-id="text"></p>
-        <button data-montage-id="button2"></button>
-        <p data-montage-id="text2"></p>
         <img data-montage-id="image">
+        <p data-montage-id="text"></p>
+        <button data-montage-id="button"></button>
     </div>
 </body>
 </html>
